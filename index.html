@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcard App</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+
+    <div class="container">
+      <h1 class="title"><span class="bold">Flashcards</span></h1>
+      <h4 class="instructions"><span class="bold">Instructions:</span> Create a new card with "<span>+</span>" button, this will display the flashcard form and once you click <span class="bold">submit</span>, a new flashcard will appear.</h4>
+      <button id="add-flashcard-btn">+</button>
+      <form id="flashcard-form">
+        <div id="form">
+          <label>Question</label>
+          <textarea id="question-input"></textarea>
+        </div>
+
+        <div>
+          <label>Answer</label>
+          <textarea id="answer-input"></textarea>
+        </div>
+
+        <button type="submit">submit</button>
+      </form>
+
+      <div id="flashcard-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
